@@ -16,7 +16,7 @@ let alphaValue = 0.0;
 function drawAnalysis(data) {
   //List the data into a p htlm by id
   const JSONData = document.getElementById("JSONDATA");
-  JSONData.innerHTML = JSON.stringify(data);
+  JSONData.innerHTML = JSON.stringify(data);  
   const featuresChart = document.getElementById("features-chart");
   featuresChart.style.width = featuresChart.offsetWidth;
   featuresChart.width = featuresChart.offsetWidth * 2;
@@ -52,6 +52,15 @@ function drawAnalysis(data) {
   //set the color of the lines based of the energy levels or how acousticness the song is
   var LineColor1 = Math.floor(energy * 16777215).toString(16);
   var LineColor2 = Math.floor(acousticness * 16777215).toString(16);
+  
+    
+  const descData = document.getElementById("Desc");
+  descData.innerHTML = " The Top line is created with Valence: " + valence + " loudness: " + loudness + " and the color from energy: " + energy + "."
+                     + " The bottom line is created with danceability: " + danceability + " tempo: " + tempo + "and the color from acousticness: " + acousticness + "."
+                     + " The crowd shows up if the liveness: " + liveness + " is over .45."
+  
+  
+  
   //Set up the charaacters for the first line
   ctx.lineWidth = 5;
   ctx.strokeStyle = "#" + LineColor2;
