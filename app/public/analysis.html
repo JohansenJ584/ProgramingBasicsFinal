@@ -1,0 +1,51 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Audio Analysis</title>
+    <meta name="description" content="Project by Justin Johansen and Avery McMurty">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Saw this on a lot of examples-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://sp-bootstrap.global.ssl.fastly.net/8.0.0/sp-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Spotify Audio Features
+      </h1>
+      <p>
+        Learn more about the audio properties of any track on spotify Search Now.
+      </p>
+      <p id = "JSONDATA">
+             Spotify data
+      </p>
+    </header>
+
+    <main>
+      <h4>search for a track:</h4>
+      <form>
+        <input type="text" maxlength="100" placeholder="Track Name">
+        <button class="btn btn-sm btn-aubergine" type="submit">Submit</button>
+      </form>
+      <section class="features">
+        <ul id="results">
+        </ul>
+        <div id="features-chart-container">
+          <canvas id="features-chart" style="border:1px solid black; z-index: 1; position:absolute;" width = '1920px'></canvas>
+          <canvas id="crowd-img" style = "z-index: 2; position:absolute;" width = '1920px'></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Spotify Art
+    </footer>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="/analysis.js"></script>
+  </body>
+</html>

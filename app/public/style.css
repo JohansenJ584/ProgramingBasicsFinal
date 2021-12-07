@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+body {
+  padding: 20px;
+}
+p {
+  max-width: 75%;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid black;
+}
+
+#features-chart {
+  width: 75%;
+  min-height:400px; 
+}
+
+#features-chart-container
+{
+  width: 75%;
+  min-height:400px;
+}
+
+#crowd-img
+{
+  width: 75%;
+  min-height:400px;
+}
+
+#JSONDATA
+{
+  width: 200px;
+}
