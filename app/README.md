@@ -24,3 +24,6 @@ https://glitch.com/edit/#!/spotify-search?path=public%2Fclient.js%3A1%3A0
 https://glitch.com/edit/#!/spotify-authorization-code?path=public%2Fclient.js%3A1%3A0
 https://glitch.com/edit/#!/spotify----?path=index.html%3A1%3A0
 https://glitch.com/edit/#!/audio-features?path=server.js%3A1%3A0
+
+https://github.com/JohansenJ584/ProgramingBasicsFinal/tree/main/app
+https://youtu.be/TJYdpkjhtmk
